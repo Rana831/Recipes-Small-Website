@@ -1,0 +1,63 @@
+
+body{
+  background-color: #f9f9f9;
+  color: gray;
+}
+.carStyle{
+  font-size: xx-large;
+}
+.border-radius-lg{
+  border-radius: 100px;
+}
+.navTextStyle{
+  font-size:medium;
+  font-weight: bold;
+}
+
+.brandName{
+  font-size: xx-large;
+}
+.cardStyle{
+  background-color: #f9f9f9;
+}
+.imgSize{
+  height: 400px;
+  width: 200px;
+  display: flex;
+  margin: 0 auto;
+}
+.footerListStyle{
+  display: flex;
+  margin: 0 auto;
+  text-align: center;
+}
+.formStyle,.contactUsForm{
+  display: flex;
+}
+.footerStyle{
+  background-color: gray;
+}
+.footerTextStyle,.footerTextStyle:hover{
+  color: #f9f9f9;
+}
+.searchBtnStyle{
+  border-color: gray;
+  color: gray;
+}
+.searchBtnStyle:hover{
+background-color: gray;
+border-color: gray;
+color:#f9f9f9;
+}
+.footerTextCardsStyle{
+  text-align: center;
+  background-color: #f9f9f9;
+  color: gray;
+  border-color: gray;
+}
+.footerTextCardsStyle:hover{
+background-color: gray;
+color: #f9f9f9;
+
+border-color: gray;
+}

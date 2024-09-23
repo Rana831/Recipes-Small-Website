@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ChiRe</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body class="container">
+  <!--Navbar-->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary navTextStyle">
+    <div class="container-fluid">
+      <a class="navbar-brand brandName" href="#"><img src="Images/steps.png" height="50px" width="90px">ChiRe</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+
+        <ul class="navbar-nav col-9">
+          <li class="nav-item homeNav">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#cardStyle">Our Chefs</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Recipes
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#hotSourLink">Hot sour soup</a></li>
+              <li><a class="dropdown-item" href="#dumplingsLink">Dumplings</a></li>
+              <li>
+                <a class="dropdown-item" href="#dimSumLink">Dim Sum</a>
+              </li>
+            </ul>
+          <li class="nav-item">
+            <a class="nav-link" href="#contactUsLink">Contact Us</a>
+          </li>
+          </li>
+        </ul>
+        <form class="d-flex col-3" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success searchBtnStyle" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <!--carousel-->
+  <div id="carouselExampleCaptions" class="carousel slide carStyle">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active" id="imgstyle">
+        <img src="Images/Hot sour soup.jpg" class="d-block w-100" alt="Hot sour soup" />
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Hot sour soup</h5>
+        </div>
+      </div>
+      <div class="carousel-item" id="imgstyle">
+        <img src="Images/Dumplings.webp" class="d-block w-100" alt="Dumplings" />
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Dumplings</h5>
+        </div>
+      </div>
+      <div class="carousel-item" id="imgstyle">
+        <img src="Images/grand div.jpg" class="d-block w-100" alt="Dim Sum" />
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Dim Sum</h5>
+        </div>
+      </div>
+
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <br>
+  <!--chefs cards-->
+  <a id="cardStyle"><h2>Our Chefs</h2><hr>
+    <div class="card-group cardStyle">
+      <div class="card rounded-0">
+        <img src="Images/0cc159c2a835bf088557c496f665f5cd.jpg" class="card-img-top imgSize" alt="Chef Lily">
+        <div class="card-body">
+          <h5 class="card-title text-center">Chef Lily</h5>
+          <p class="card-text">Title: Executive Chef</p>
+          <p class="card-text">She began her career in 2005 at the Guangzhou Restaurant, China. In 2015, she immigrated
+            to Vancouver and served as the executive chef at East Lake, Floata, and Dynasty Seafood Restaurant.</p>
+        </div>
+        <div class="card-footer footerTextCardsStyle">
+          <small class="text-muted">More Info</small>
+        </div>
+      </div>
+      <div class="card rounded-0">
+        <img src="Images/33d83753e6e81d3fcb4f4e34b3c10b35.jpg" class="card-img-top imgSize" alt="Chef Jhon">
+        <div class="card-body">
+          <h5 class="card-title text-center">Chef Jhon</h5>
+          <p class="card-text">Title: Head Chef</p>
+          <p class="card-text">He began his career in 1999 at the Guangzhou Restaurant, China. In 2010, he immigrated to
+            Vancouver and served as the head chef at East Lake, Floata, and Dynasty Seafood Restaurant.</p>
+        </div>
+        <div class="card-footer footerTextCardsStyle">
+          <small class="text-muted">More Info</small>
+        </div>
+      </div>
+      <div class="card rounded-0">
+        <img src="Images/d7699ed65f6fa0da45e12d295f4b7a61.jpg" class="card-img-top imgSize" alt="Chef Nana">
+        <div class="card-body">
+          <h5 class="card-title text-center">Chef Nana</h5>
+          <p class="card-text">Title: Executive Chef</p>
+          <p class="card-text">She began her career in 2005 at the Guangzhou Restaurant, China. In 2015, she immigrated
+            to Vancouver and served as the executive chef at East Lake, Floata, and Dynasty Seafood Restaurant.</p>
+        </div>
+        <div class="card-footer footerTextCardsStyle">
+          <small class="text-muted">More Info</small>
+        </div>
+      </div>
+    </div>
+  </a>
+
+  <div>
+    <br>
+    <br>
+    <!--Recipes cards-->
+    <h2>Our Recipes</h2>
+    <hr>
+    <div class="card col-12">
+      <a id="hotSourLink">
+        <div class="row no-gutters">
+          <div class="col-4">
+            <img src="Images/Hot sour soup.jpg" class="card-img" alt="Hot sour soup">
+          </div>
+          <div class="col-8">
+            <div class="card-body">
+              <h5 class="card-title">Hot sour soup</h5>
+              <p class="card-text">Hot and Sour soup is a Chinese soup that’s savoury, spicy and tangy. The broth is
+                thickened and it’s filled with mushrooms, tofu, bamboo shoots and silky egg ribbons. The flavour and
+                textures in this soup are an addictive combination, making it a firm Chinese restaurant favourite!</p>
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+    <hr>
+    <div class="card col-12">
+      <a id="dumplingsLink">
+        <div class="row no-gutters">
+          <div class="col-md-4">
+            <img src="Images/Dumplings.webp" class="card-img" alt="Dumplings">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Dumplings</h5>
+              <p class="card-text">Making homemade dumplings can seem daunting if you've never made them before. But
+                after you learn how to make them, you'll relish the satisfaction of mastering them. Our recipe starts
+                with a simple dough of flour, water, and salt, rolled out thinly and cut into circles. The dough is
+                folded around a savory filling of pork, succulent shrimp, and a colorful array of veggies for incredible
+                flavor and texture. The dumplings are pan-fried, steamed to perfection, and served with a tasty sauce of
+                soy sauce, rice wine vinegar, sesame oil, and crushed red pepper flakes for a subtle kick of heat. </p>
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+    <hr>
+    <div class="card col-12">
+      <a id="dimSumLink">
+        <div class="row no-gutters">
+          <div class="col-md-4">
+            <img src="Images/grand div.jpg" class="card-img" alt="Dim Sum">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Dim Sum</h5>
+              <p class="card-text">Dim sum is a large range of small Chinese dishes that are traditionally enjoyed in
+                restaurants for brunch, with a “selection of over 1,000 varieties of small-plate Chinese foods, usually
+                meat or vegetables in dough or a wrapper that is steamed, deep-fried or pan-fried.”</p>
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+  <!--Contact us-->
+  <a id="contactUsLink">
+    <br>
+  <h2>Contact Us</h2>
+  <hr>
+    <div class="form-row contactUsForm container">
+      <div class="col-md-4 mb-3">
+        <label for="validationCustom01">First name</label>
+        <input type="text" class="form-control" id="validationCustom01" placeholder="First name" value="Mark" required>
+      </div>
+      <div class="col-md-4 mb-3">
+        <label for="validationCustom02">Last name</label>
+        <input type="text" class="form-control" id="validationCustom02" placeholder="Last name" value="Otto" required>
+      </div>
+      <div class="col-md-4 mb-3">
+        <label for="validationCustomUsername">Username</label>
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="inputGroupPrepend">@</span>
+          </div>
+          <input type="text" class="form-control" id="validationCustomUsername" placeholder="Username"
+            aria-describedby="inputGroupPrepend" required>
+
+        </div>
+      </div>
+    </div>
+    <div class="form-row contactUsForm container">
+      <div class="col-md-6 mb-3">
+        <label for="validationCustom03">City</label>
+        <input type="text" class="form-control" id="validationCustom03" placeholder="City" required>
+        <div class="invalid-feedback">
+          Please provide a valid city.
+        </div>
+      </div>
+      <div class="col-md-3 mb-3">
+        <label for="validationCustom04">State</label>
+        <input type="text" class="form-control" id="validationCustom04" placeholder="State" required>
+        <div class="invalid-feedback">
+          Please provide a valid state.
+        </div>
+      </div>
+      <div class="col-md-3 mb-3">
+        <label for="validationCustom05">Zip</label>
+        <input type="text" class="form-control" id="validationCustom05" placeholder="Zip" required>
+        <div class="invalid-feedback">
+          Please provide a valid zip.
+        </div>
+      </div>
+    </div>
+    <form class="was-validated container">
+      <div class="mb-3">
+        <label for="validationTextarea">Suggetions</label>
+        <textarea class="form-control" id="validationTextarea" placeholder="Please enter your suggetions."></textarea>
+      </div>
+      <button class="btn btn-primary footerTextCardsStyle" type="submit">Submit form</button>
+    </form>
+  </a>
+  <hr>
+  <!--footer-->
+  <div class="footerStyle rounded-0 footerTextStyle">
+    <footer class="container">
+      <br>
+      <div class="row">
+        <div class="col-12 text-center">
+          <img src="Images/steps.png" height="100px" width="150px">
+          <h3>ChiRe</h3>
+          <ul class="nav container footerListStyle">
+            <li class="nav-item col-3"><a href="#" class="nav-link footerTextStyle">Home</a></li>
+            <li class="nav-item col-3"><a href="#cardStyle" class="nav-link footerTextStyle">Our Chefs</a></li>
+            <li class="nav-item col-3"><a href="#hotSourLink" class="nav-link footerTextStyle">Recipes</a></li>
+            <li class="nav-item col-3"><a href="#contactUsLink" class="nav-link footerTextStyle">Contact Us</a></li>
+          </ul>
+          <br>
+        </div>
+        <hr>
+        <div class="col-12">
+          <form>
+            <h5>Subscribe to our Blog</h5>
+            <p>Monthly digest of what's new and exciting from us.</p>
+            <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+              <label for="newsletter1" class="visually-hidden">Email address</label>
+              <input id="newsletter1" type="text" class="form-control" placeholder="Email address"
+                fdprocessedid="i9245g">
+              <button class="btn btn-primary footerTextCardsStyle" type="button"
+                fdprocessedid="88gcvu">Subscribe</button>
+            </div>
+          </form>
+          <br>
+        </div>
+      </div>
+
+    </footer>
+    <div class=" border-top container">
+      <p>© 2023 Company, Inc. All rights reserved.</p>
+      <br>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
